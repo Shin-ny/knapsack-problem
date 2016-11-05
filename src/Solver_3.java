@@ -98,7 +98,7 @@ public class Solver_3 {
 
 
         // prepare the solution in the specified output format
-        System.out.println(value+" 0");
+        System.out.println(value);
         for(int i=0; i < items; i++){
             System.out.print(taken[i]+" ");
         }
