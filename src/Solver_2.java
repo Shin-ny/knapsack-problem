@@ -72,6 +72,8 @@ public class Solver_2 {
             valueDen[i][1] = i;
         }
 
+        //sort the item by value density
+        //sort from small to large!!
         java.util.Arrays.sort(valueDen, new java.util.Comparator<double[]>() {
             public int compare(double[] a, double[] b) {
                 return Double.compare(a[0], b[0]);
@@ -83,7 +85,7 @@ public class Solver_2 {
         int value = 0;
         int weight = 0;
         int[] taken = new int[items];
-        for(int i=0; i < items; i++){
+        for(int i=items - 1; i >= 0; i--){
             if(weight + weights[(int)(valueDen[i][1])] <= capacity){
                 taken[(int)(valueDen[i][1])] = 1;
                 value += values[(int)(valueDen[i][1])];
