@@ -40,4 +40,10 @@ python ./solver.py ../data/ks_4_0
 * __Solver_1__: a trivial greedy algorithm for filling the knapsack, it takes items in the original order until the knapsack is full
 * __Solver_2__: a slightly better algorithm comparing the first one. It first sort the items by value density (value/weight), then take items in that order until the knapsack is full
 * __Solver_3__: DP(dynamic programming)  _([Here](https://www.youtube.com/watch?v=8LusJS5-AGo&t=807s) is a great youtube video simulation of this algorithm.)_
-* __Solver_4__: Using deep search to the binary tree which construct by whether select the current item or not.
+* __Solver_4__: using deep search to the binary tree which construct by whether select the current item or not
+* __Solver_5__: using a classic evolution algorithm: hill-climbing; which will flip the coin(whether select an item or not) with a possibility of 1/items based on current best solution. 
+
+
+## Conclusion:
+
+The hill-climbing algorithm seems working well compared to DP on small problems after repeating it for 10,000 times. But on larger problems, even increase the repeatition for 100-fold, there doesn't seem to be any great performance increasing.
