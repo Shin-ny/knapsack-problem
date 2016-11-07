@@ -75,7 +75,7 @@ public class Solver_5 {
 
         
         taken = new int[items];
-        int maxTries = 1000;
+        int maxTries = 100000;
 
         //making the original node:
         for(int i=0; i < items; i++) {
@@ -91,7 +91,7 @@ public class Solver_5 {
 
         for(int i=0; i < maxTries; i++) {
             Node n = hillClimber(origin);
-            hillClimber(n);
+            origin = n;
         }
 
 
