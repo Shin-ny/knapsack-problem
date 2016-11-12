@@ -6,6 +6,7 @@ import java.util.ArrayList;
  * The class <code>Solver</code> is an implementation of a greedy algorithm to solve the knapsack problem.
  *
  */
+
 public class Solver_1 {
     
     /**
